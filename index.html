@@ -1,10 +1,14 @@
 <head>
 </head>
-<div>
+<div id="box">
   トップページ
 </div>
 
   <script>
      const ua = navigator.userAgent.toLowerCase().trim()
-     alert(ua)
+     console.log(ua)
+     const boxElem = document.getElementById('box');
+     let newElem = document.createElement('p')
+     newElem.textContent = ua
+     boxElem.appendChild(newElem)
   </script>
